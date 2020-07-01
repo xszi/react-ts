@@ -1,10 +1,10 @@
 import React from 'react'
 // import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Redirect } from 'react-router-dom'
 
 import Header from '../../components/header'
 import Tabbar, { Tabber } from '../../components/tabbar'
-// import Layout, { Fixed, Main } from './style'
-import Layout, { Fixed } from './style'
+import Layout, { Fixed, Main } from './style'
 
 const navList: Tabber[] = [
     { name: '全部', route: '/topic/all'},
@@ -22,6 +22,11 @@ const BaseLayout = () => {
                 <Header logo={require('../../assets/logo.svg')}></Header>
                 <Tabbar value={navList}></Tabbar>
             </Fixed>
+            <Main>
+                <Switch>
+                    <Redirect from={'/'} to={'/topic/all'}></Redirect>
+                </Switch>
+            </Main>
         </Layout>
     )
 }
