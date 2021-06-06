@@ -1,4 +1,4 @@
-# react-study
+# react
 
 some react demos
 
