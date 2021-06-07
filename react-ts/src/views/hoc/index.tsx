@@ -24,4 +24,6 @@ function injectComp<P extends object>(Comp: React.ComponentClass<P>) {
 }
 
 //  经注入属性后的高阶组件
-export const InjectedBox = injectComp(Box);
+const InjectedBox = injectComp(Box);
+
+export default InjectedBox

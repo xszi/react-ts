@@ -2,7 +2,7 @@ import { IRouteProps } from '@/router/types'
 import { HOME } from './constants'
 import TestPage from '@/views/todo/index'
 import HocPage from '@/views/hoc/index'
-
+import TicTacTocPage from '@/views/ticTacToe/index'
 
 const routesMap: IRouteProps[] = [
     {
@@ -25,6 +25,17 @@ const routesMap: IRouteProps[] = [
             requireAuth: false,
             // 网页标题
             title: HOME.HOC.name
+        }
+    },
+    {
+        path: HOME.TIC.path,
+        exact: true,
+        component: TicTacTocPage,
+        meta: {
+            // 当前页面是否需要登录状态
+            requireAuth: false,
+            // 网页标题
+            title: HOME.TIC.name
         }
     }
 ]
