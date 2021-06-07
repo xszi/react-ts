@@ -1,24 +1,22 @@
-# react
+### fixed
 
-some react demos
+元素会被移出正常文档流，并不为元素预留空间，而是通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。fixed 属性会创建新的层叠上下文。**当元素祖先的 transform, perspective 或 filter 属性非 none 时，容器由视口改为该祖先**。
 
-react 组件生命周期
-click 事件需要注意的地方，使用 setTimeout 打印是输出为 null , 为什么？
+### cost
 
-非常有必要实现自己的todolist regular to do
+* 机会成本： 选择一个必须放弃另一个所需付出的成本
+* 沉没成本： 已经付出的时间或精力，不可收回的成本
+* 边际效益： 虽时间的推移，投入同样的成本产出的收益递减
 
-cnodejs.org
+### React的class类组件和函数式组件
 
-<!-- 使用ts初始化一个react项目 -->
-npx create-react-app cnodejs --typescript
+class类组件：
 
-工作项目中的公共请求方法 √
+* 使用this，普通的调用方法
+* 不使用Hooks
 
-？.  需要babel加一個插件
-样式组件
-react.memo prop不更改的不重新渲染
+函数式组件：
 
-console.table(obj)
-consolr.dir(NodeList)
-
+* 不使用this
+* 使用hooks
 
