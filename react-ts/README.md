@@ -1,14 +1,22 @@
-### 使用vite启动一个react+ts项目
+### fixed
 
-> npm init @vitejs/app fe-project-base --template react-ts
+元素会被移出正常文档流，并不为元素预留空间，而是通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。fixed 属性会创建新的层叠上下文。**当元素祖先的 transform, perspective 或 filter 属性非 none 时，容器由视口改为该祖先**。
 
-分别搭建两套模板，后面按需在不同的模板上进行练习，对比差异
+### cost
 
-* 使用普通class组件
-* 使用react hooks
+* 机会成本： 选择一个必须放弃另一个所需付出的成本
+* 沉没成本： 已经付出的时间或精力，不可收回的成本
+* 边际效益： 虽时间的推移，投入同样的成本产出的收益递减
 
-### experimentalDecorators???
+### React的class类组件和函数式组件
 
-### 面向类型编程：`Typescript` 中的高级类型
+class类组件：
 
-详见test.ts文件代码
+* 使用this，普通的调用方法
+* 不使用Hooks
+
+函数式组件：
+
+* 不使用this
+* 使用hooks
+

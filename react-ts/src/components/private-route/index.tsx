@@ -44,12 +44,6 @@ const PrivateRoute: React.FC<Props> = ({
         return true
     }()
 
-    if (meta?.isLoginToHome && isLogin) {
-        const redirectUrl = qs.parse(location.search).redirectUrl as string
-        const url = redirectUrl || HOME.HOME_INDEX.path
-        return <Redirect to={url} />
-    }
-
     return (
         <Route render={props => {
             return (
